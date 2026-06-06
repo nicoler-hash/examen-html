@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundación Patitas Felices - Nuestro Impacto</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="barra-navegacion">
+      <a class="logo" href="#inicio-hero">
+        <img class="icono-logo" src="imagenes/logos.avif" alt="Logo Patitas Felices" />
+        <p>Patitas Felices🐾</p>
+      </a>
+      <div class="enlaces-navegacion">
+        <a href="index.html#inicio-hero">Inicio</a>
+        <a href="index.html#conocenos-servicios">Servicios</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="impacto.html">Impacto</a>
+      </div>
+    </nav>
+
+    <main class="impacto-section">
+      <header class="impacto-header">
+        <div class="container">
+          <h1 class="titulo-seccion">Nuestro Impacto</h1>
+          <p class="impacto-subtitulo">
+            Cada rescate, cada adopción y cada voluntario suman a una misma misión:
+            mejorar la vida de los animales y acompañarles hasta un hogar seguro.
+          </p>
+        </div>
+      </header>
+
+      <section class="container">
+        <div class="rejilla-metricas">
+          <div class="tarjeta-impacto">
+            <div class="tarjeta-impacto-cabecera">
+              <div class="icono-mv" aria-hidden="true">
+                <i class="fa-solid fa-paw"></i>
+              </div>
+              <div class="impacto-numero">324</div>
+            </div>
+            <div class="impacto-label">Animales rescatados</div>
+            <div class="impacto-footnote">últimos 12 meses</div>
+          </div>
+
+          <div class="tarjeta-impacto">
+            <div class="tarjeta-impacto-cabecera">
+              <div class="icono-mv" aria-hidden="true">
+                <i class="fa-solid fa-house-chimney-heart"></i>
+              </div>
+              <div class="impacto-numero">289</div>
+            </div>
+            <div class="impacto-label">Animales reubicados/adoptados</div>
+            <div class="impacto-footnote">últimos 12 meses</div>
+          </div>
+
+          <div class="tarjeta-impacto">
+            <div class="tarjeta-impacto-cabecera">
+              <div class="icono-mv" aria-hidden="true">
+                <i class="fa-solid fa-user-check"></i>
+              </div>
+              <div class="impacto-numero">42</div>
+            </div>
+            <div class="impacto-label">Voluntarios activos</div>
+            <div class="impacto-footnote">últimos 12 meses</div>
+          </div>
+
+          <div class="tarjeta-impacto">
+            <div class="tarjeta-impacto-cabecera">
+              <div class="icono-mv" aria-hidden="true">
+                <i class="fa-solid fa-calendar-days"></i>
+              </div>
+              <div class="impacto-numero">18</div>
+            </div>
+            <div class="impacto-label">Eventos organizados</div>
+            <div class="impacto-footnote">últimos 12 meses</div>
+          </div>
+        </div>
+
+        <div class="impacto-grafico-wrap" aria-label="Comparación de métricas (mock)">
+          <h2 class="titulo-seccion impacto-grafico-titulo">Comparación visual</h2>
+
+          <!--
+            Gráfico horizontal sin JS.
+            Proporción visual:
+            bar width = (value / maxValue) * 100%
+            maxValue = 324 (Animales rescatados)
+          -->
+          <div class="impact-chart" role="img" aria-label="Barras horizontales: 324, 289 y 42">
+            <div class="chart-row">
+              <div class="chart-label">
+                <span class="chart-label-text">Rescatados</span>
+                <span class="chart-label-value">324</span>
+              </div>
+              <div class="chart-bar-outer" aria-hidden="true">
+                <div class="chart-bar chart-bar--rescatados" title="324" ></div>
+              </div>
+            </div>
+
+            <div class="chart-row">
+              <div class="chart-label">
+                <span class="chart-label-text">Reubicados/Adoptados</span>
+                <span class="chart-label-value">289</span>
+              </div>
+              <div class="chart-bar-outer" aria-hidden="true">
+                <div class="chart-bar chart-bar--reubicados" title="289" ></div>
+              </div>
+            </div>
+
+            <div class="chart-row">
+              <div class="chart-label">
+                <span class="chart-label-text">Voluntarios</span>
+                <span class="chart-label-value">42</span>
+              </div>
+              <div class="chart-bar-outer" aria-hidden="true">
+                <div class="chart-bar chart-bar--voluntarios" title="42" ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="impacto-narrativa">
+          <p>
+            Estas cifras representan el trabajo constante detrás de cada animal: rescate,
+            cuidados, rehabilitación y seguimiento para lograr adopciones responsables.
+            Si quieres que la historia de más huellitas llegue a un hogar, participa y
+            apóyanos con tu donación o voluntariado.
+          </p>
+          <a class="boton boton-primario impacto-cta" href="#" aria-label="Contribuye (no funcional)">
+            <i class="fa-solid fa-heart" aria-hidden="true"></i> Contribuye
+          </a>
+        </section>
+      </section>
+    </main>
+
+    <footer class="pie-principal">
+      <div class="contenedor-footer">
+        <div class="marca-footer">
+          <h5>Fundación Patitas Felices</h5>
+          <p>&copy; 2026. Todos los derechos reservados.</p>
+        </div>
+        <div class="contacto-footer">
+          <p>Contacto: info@patitasfelices.com</p>
+        </div>
+        <div class="desarrollador-footer">
+          <p>
+            Desarrollado por:
+            <a href="#" aria-label="Perfil de Nicole Rodriguez">Nicole Rodriguez</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
